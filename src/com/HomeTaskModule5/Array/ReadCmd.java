@@ -9,9 +9,15 @@ public class ReadCmd {
 
     public static int Read() throws IOException {
         System.out.println("Hello!Enter please quantity of numbers for array :");
-        int numer = Integer.parseInt(reader.readLine());
-        return numer;
+        try {
+            return Integer.parseInt(reader.readLine());
 
+        } catch (NumberFormatException e) {
+            System.out.println("You enter wrong value");
+        }
+
+
+        return 0;
     }
 }
 
