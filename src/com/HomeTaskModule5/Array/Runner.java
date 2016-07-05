@@ -9,9 +9,11 @@ public class Runner {
         arrayObject.printArray(arrayObject.getArray());
         MaxValue.maxValue(arrayObject.getArray());
         MinValue.minValue(arrayObject.getArray());
-        SortArrayInsert.sortArrayInsert(arrayObject.getArray(),arrayObject.getLenghtArray());
+        SortArrayInsert.sortArrayInsert(arrayObject.getArray(),arrayObject.getLengthArray());
         arrayObject.printArray(arrayObject.getArray());
 
+        MaxValue.Sort(arrayObject.getArray());
+        arrayObject.printArray(arrayObject.getArray());
 
 
     }

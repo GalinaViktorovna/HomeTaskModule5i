@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Array {
     private int[] array;
-    private int lenghtArray;
+    private int lengthArray;
 
     public int[] getArray() {
         return array;
@@ -14,16 +14,16 @@ public class Array {
         this.array = array;
     }
 
-    public int getLenghtArray() {
-        return lenghtArray;
+    public int getLengthArray() {
+        return lengthArray;
     }
 
-    public void setLenghtArray(int lenghtArray) {
-        this.lenghtArray = lenghtArray;
+    public void setLengthArray(int lengthArray) {
+        this.lengthArray = lengthArray;
     }
 
     public int[] createArray(Array arrayObj, int lenghtArray) {
-        arrayObj.setLenghtArray(lenghtArray);
+        arrayObj.setLengthArray(lenghtArray);
         arrayObj.array = new int[lenghtArray];
         return arrayObj.array;
 
@@ -32,7 +32,7 @@ public class Array {
 
     public int[] addToArray(int[] array) throws IOException {
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i <array.length; i++) {
             System.out.println("Enter " + (i + 1) + " number :");
             array[i] = Integer.parseInt(ReadCmd.reader.readLine());
 
@@ -43,7 +43,7 @@ public class Array {
     public void printArray(int[] arrayObj) {
         System.out.print("It's your array :  ");
         for (int i :arrayObj) {
-            System.out.print(arrayObj[i] + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
     }

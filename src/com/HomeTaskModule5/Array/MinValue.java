@@ -17,6 +17,6 @@ public class MinValue {
                 array[mini] = tmp;
             }
         }
-        System.out.println("MIN value is: " + array[0]);
+        System.out.println("According to Selection sort MIN value is: " + array[0]);
     }
 }
