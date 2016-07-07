@@ -28,12 +28,12 @@ public class SortArray {
         quickSorting(array, mid + 1, end);
     }
 
-    public static void sortArrayQuickSort(int[] array) {
+    public static int[] sortArrayQuickSort(int[] array) {
         int first = 0;
         int last = array.length - 1;
         quickSorting(array, first, last);
-        
-        System.out.println("According to quickSorting MAX Value is: " + array[array.length - 1]);
+        return array;
+
     }
     public static int[] sortArrayInsert(int[] array, int arrayLenght) {
 
