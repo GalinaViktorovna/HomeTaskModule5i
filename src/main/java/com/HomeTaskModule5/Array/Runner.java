@@ -5,14 +5,13 @@ import java.io.IOException;
 public class Runner {
     public static void main(String[] args) throws IOException {
         Array arrayObject = new Array();
-        arrayObject.addToArray(arrayObject.createArray(arrayObject, ReadCmd.Read()));
+        arrayObject.addToArray(arrayObject.createArray(arrayObject, ReadCmdUtil.Read()));
         arrayObject.printArray(arrayObject.getArray());
-        MaxValue.maxValue(arrayObject.getArray());
-        MinValue.minValue(arrayObject.getArray());
-        SortArrayInsert.sortArrayInsert(arrayObject.getArray(),arrayObject.getLengthArray());
+        Counting.calculateMaxValue(arrayObject.getArray());
+        Counting.calculateMaxValue(arrayObject.getArray());
+        SortArray.sortArrayInsert(arrayObject.getArray(),arrayObject.getLengthArray());
         arrayObject.printArray(arrayObject.getArray());
-
-        MaxValue.Sort(arrayObject.getArray());
+        SortArray.sortArrayQuickSort(arrayObject.getArray());
         arrayObject.printArray(arrayObject.getArray());
 
 

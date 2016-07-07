@@ -34,7 +34,7 @@ public class Array {
 
         for (int i = 0; i <array.length; i++) {
             System.out.println("Enter " + (i + 1) + " number :");
-            array[i] = Integer.parseInt(ReadCmd.reader.readLine());
+            array[i] = Integer.parseInt(ReadCmdUtil.reader.readLine());
 
         }
         return array;
