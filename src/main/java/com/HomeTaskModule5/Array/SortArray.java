@@ -28,14 +28,14 @@ public class SortArray {
         quickSorting(array, mid + 1, end);
     }
 
-    public static int[] sortArrayQuickSort(int[] array) {
+    public static void sortArrayQuickSort(int[] array) {
         int first = 0;
         int last = array.length - 1;
         quickSorting(array, first, last);
-        return array;
 
     }
-    public static int[] sortArrayInsert(int[] array, int arrayLenght) {
+
+    public static void sortArrayInsert(int[] array, int arrayLenght) {
 
         int i, j, value;
 
@@ -46,6 +46,5 @@ public class SortArray {
             }
             array[j + 1] = value;
         }
-        return array;
     }
 }

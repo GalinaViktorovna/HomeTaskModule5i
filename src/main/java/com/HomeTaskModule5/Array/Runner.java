@@ -9,7 +9,7 @@ public class Runner {
         arrayObject.printArray(arrayObject.getArray());
         Counting.calculateMaxValue(arrayObject.getArray());
         Counting.calculateMaxValue(arrayObject.getArray());
-        SortArray.sortArrayInsert(arrayObject.getArray(),arrayObject.getLengthArray());
+        SortArray.sortArrayInsert(arrayObject.getArray(), arrayObject.getLengthArray());
         arrayObject.printArray(arrayObject.getArray());
         SortArray.sortArrayQuickSort(arrayObject.getArray());
         arrayObject.printArray(arrayObject.getArray());
